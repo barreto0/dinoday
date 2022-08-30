@@ -1,11 +1,11 @@
-import Landing from '../components/Landing';
+import LandingPage from '../components/Landing/LandingPage.vue';
 import NotFound from '../components/errors/NotFound.vue';
 
 export const routes = [
   {
     path: '/',
-    component: Landing,
-    title: 'ChooseInteractionType',
+    component: LandingPage,
+    title: 'LandingPage',
     meta: { guest: true },
   },
   //   {
