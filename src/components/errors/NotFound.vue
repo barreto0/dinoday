@@ -1,14 +1,22 @@
 <template>
   <div
-    class="d-flex align-items-center justify-content-center vh-100"
+    class="background d-flex align-items-center justify-content-center vh-100"
   >
     <div class="text-center">
-      <h1 class="display-1 fw-bold">404</h1>
-      <p class="fs-3">
-        <span class="text-danger">Opps!</span> Page not found.
+      <h1 class="text-white display-1 fw-bold">404</h1>
+      <p class="fs-3 text-white">
+        <span class="text-danger">Oops!</span> Página não encontrada.
       </p>
-      <p class="lead">A página que você procurou não existe.</p>
-      <a href="index.html" class="btn btn-primary">Go Home</a>
+      <p class="lead text-white">
+        A página que você procurou não existe.
+      </p>
+      <button
+        type="button"
+        class="btn btn-danger"
+        @click="$router.push('/')"
+      >
+        Ir para o início
+      </button>
     </div>
   </div>
 </template>
